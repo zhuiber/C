@@ -1,5 +1,4 @@
 // 组合数计算
-
 #include <stdio.h>
 #define N 10
 #define M 5
