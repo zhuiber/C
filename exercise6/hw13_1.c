@@ -13,7 +13,6 @@ int main()
 
   // 输出每行前的空格
   for (i = 1; i <= 2; i++)
-
   {
     for (j = 1; j <= 2 - i; j++)
       printf(" ");

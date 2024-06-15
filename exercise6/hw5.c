@@ -8,13 +8,13 @@
 int main()
 {
   int i;
-  double sum = 1.0, term = 1.0;
+  double sum = 1.0, term = 1.0, pi;
   for (i = 2; i <= 100; i += 2)
   {
     term = (double)i * i / ((i - 1) * (i + 1));
     sum *= term;
   }
-  double pi = sum * 2;
+  pi = sum * 2;
   printf("Calculated value of pi: %f\n", pi);
   return 0;
 }

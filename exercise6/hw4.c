@@ -9,7 +9,6 @@ int main()
 {
   int a, n, sum = 0, i, term = 0;
   scanf("%d%d", &a, &n);
-  scanf("", &a);
   for (i = 0; i < n; i++)
   {
     term = term * 10 + a;
