@@ -7,17 +7,25 @@
 // 函数用于升序排序数组
 void sort(int arr[], int n)
 {
-  int temp;
+  int minIndex, temp;
   for (int i = 0; i < n - 1; i++)
   {
+    // 假设当前元素是未排序部分的最小值
+    minIndex = i;
+    // 遍历未排序部分，寻找最小值
     for (int j = i + 1; j < n; j++)
     {
-      if (arr[i] > arr[j])
+      if (arr[j] < arr[minIndex])
       {
-        temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+        minIndex = j;
       }
+    }
+    // 只有当最小值位置发生变化时才进行交换
+    if (minIndex != i)
+    {
+      temp = arr[i];
+      arr[i] = arr[minIndex];
+      arr[minIndex] = temp;
     }
   }
 }

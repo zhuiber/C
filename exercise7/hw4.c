@@ -16,7 +16,7 @@ int main()
   for (j = 0; j < n; j++)
     printf("%d", a[j]);
   printf("\n");
-  for (i = 0; i < n - 1; i++)
+  for (i = 1; i < n; i++)
   {
     t = a[n - 1];
     for (j = 5; j > 0; j--)

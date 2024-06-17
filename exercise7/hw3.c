@@ -9,13 +9,9 @@ int main()
   for (i = 0; i < n; i++)
   {
     if (a[max] < a[i])
-    {
       max = i;
-    }
     if (a[min] > a[i])
-    {
       min = i;
-    }
   }
   t = a[max];
   a[max] = a[min];
