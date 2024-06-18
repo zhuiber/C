@@ -1,0 +1,85 @@
+digraph OverallFlow {
+  rankdir = LR;
+  
+  // 主程序流程图
+  subgraph cluster_main_program {
+    label = "主程序流程图";
+    color = lightgrey;
+    style = filled;
+    node [shape = box;];
+    
+    Start [label = "开始";];
+    Input [label = "输入球的个数\n（最大值：10）";];
+    InitializePic [label = "图像初始化";];
+    InitializeBalls [label = "球初始化";];
+    Loop [label = "进入循环处理";];
+    End [label = "释放内存\n结束";];
+    
+    Start -> Input;
+    Input -> InitializePic;
+    InitializePic -> InitializeBalls;
+    InitializeBalls -> Loop;
+    Loop -> Loop [label = "处理每一张图像";];
+    Loop -> End [label = "退出循环";];
+  }
+  
+  // 函数流程图
+  subgraph cluster_functions {
+    label = "函数流程图";
+    color = lightblue;
+    style = filled;
+    node [shape = box;];
+    
+    InitPic [label = "init_pic()";];
+    InitBall [label = "init_ball()";];
+    Process [label = "process()";];
+    CheckCollision [label = "check_collision()";];
+    
+    InitPic -> InitPicFlow;
+    InitBall -> InitBallFlow;
+    Process -> ProcessFlow;
+    CheckCollision -> CheckCollisionFlow;
+    
+    subgraph cluster_init_pic {
+      label = "init_pic() 函数流程图";
+      color = lightyellow;
+      style = filled;
+      node [shape = box;];
+      
+      InitPicFlow [label = "设置空格、边界和星号";];
+    }
+    
+    subgraph cluster_init_ball {
+      label = "init_ball() 函数流程图";
+      color = lightyellow;
+      style = filled;
+      node [shape = box;];
+      
+      InitBallFlow [label = "设置球的位置、速度和图标";];
+    }
+    
+    subgraph cluster_process {
+      label = "process() 函数流程图";
+      color = lightyellow;
+      style = filled;
+      node [shape = box;];
+      
+      ProcessFlow [label = "打印图像、移动球、边界检测和碰撞检测";];
+    }
+    
+    subgraph cluster_check_collision {
+      label = "check_collision() 函数流程图";
+      color = lightyellow;
+      style = filled;
+      node [shape = box;];
+      
+      CheckCollisionFlow [label = "遍历球，检测距离，\n发生碰撞时改变方向和颜色";];
+    }
+  }
+  
+  // 连接主程序和函数流程图
+  InitializePic -> InitPic;
+  InitializeBalls -> InitBall;
+  Loop -> Process;
+  Loop -> CheckCollision;
+}

@@ -1,0 +1,210 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="982pt" height="523pt" viewBox="0.00 0.00 981.69 523.00">
+<g id="graph0" class="graph" transform="translate(4,519) scale(1)" data-name="OverallFlow">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-519 977.69,-519 977.69,4 -4,4" style=""/>
+<g id="clust1" class="cluster" data-name="cluster_main_program">
+
+<polygon fill="lightgrey" stroke="lightgrey" points="8,-395 8,-507 688.09,-507 688.09,-395 8,-395" style=""/>
+<text text-anchor="middle" x="348.05" y="-490.4" font-family="Times,serif" font-size="14.00" style="">主程序流程图</text>
+</g>
+<g id="clust2" class="cluster" data-name="cluster_functions">
+
+<polygon fill="lightblue" stroke="lightblue" points="586.5,-8 586.5,-387 965.69,-387 965.69,-8 586.5,-8" style=""/>
+<text text-anchor="middle" x="776.09" y="-370.4" font-family="Times,serif" font-size="14.00" style="">函数流程图</text>
+</g>
+<g id="clust3" class="cluster" data-name="cluster_init_pic">
+
+<polygon fill="lightyellow" stroke="lightyellow" points="778.69,-16 778.69,-93 915.69,-93 915.69,-16 778.69,-16" style=""/>
+<text text-anchor="middle" x="847.19" y="-76.4" font-family="Times,serif" font-size="14.00" style="">init_pic() 函数流程图</text>
+</g>
+<g id="clust4" class="cluster" data-name="cluster_init_ball">
+
+<polygon fill="lightyellow" stroke="lightyellow" points="768.19,-101 768.19,-178 926.19,-178 926.19,-101 768.19,-101" style=""/>
+<text text-anchor="middle" x="847.19" y="-161.4" font-family="Times,serif" font-size="14.00" style="">init_ball() 函数流程图</text>
+</g>
+<g id="clust5" class="cluster" data-name="cluster_process">
+
+<polygon fill="lightyellow" stroke="lightyellow" points="736.69,-277 736.69,-354 957.69,-354 957.69,-277 736.69,-277" style=""/>
+<text text-anchor="middle" x="847.19" y="-337.4" font-family="Times,serif" font-size="14.00" style="">process() 函数流程图</text>
+</g>
+<g id="clust6" class="cluster" data-name="cluster_check_collision">
+
+<polygon fill="lightyellow" stroke="lightyellow" points="763.19,-186 763.19,-269 932.19,-269 932.19,-186 763.19,-186" style=""/>
+<text text-anchor="middle" x="847.69" y="-252.4" font-family="Times,serif" font-size="14.00" style="">check_collision() 函数流程图</text>
+</g>
+<!-- Start -->
+<g id="node1" class="node" pointer-events="visible" data-name="Start">
+
+<polygon fill="none" stroke="black" points="70,-442 16,-442 16,-406 70,-406 70,-442" style=""/>
+<text text-anchor="middle" x="43" y="-419.8" font-family="Times,serif" font-size="14.00" style="">开始</text>
+</g>
+<!-- Input -->
+<g id="node2" class="node" pointer-events="visible" data-name="Input">
+
+<polygon fill="none" stroke="black" points="200,-444.6 107,-444.6 107,-403.4 200,-403.4 200,-444.6" style=""/>
+<text text-anchor="middle" x="153.5" y="-428.2" font-family="Times,serif" font-size="14.00" style="">输入球的个数</text>
+<text text-anchor="middle" x="153.5" y="-411.4" font-family="Times,serif" font-size="14.00" style="">（最大值：10）</text>
+</g>
+<!-- Start&#45;&gt;Input -->
+<g id="edge1" class="edge" data-name="Start-&gt;Input">
+
+<path fill="none" stroke="black" d="M70.26,-424C77.85,-424 86.45,-424 95.15,-424" style=""/>
+<polygon fill="black" stroke="black" points="95.06,-427.5 105.06,-424 95.06,-420.5 95.06,-427.5" style=""/>
+</g>
+<!-- InitializePic -->
+<g id="node3" class="node" pointer-events="visible" data-name="InitializePic">
+
+<polygon fill="none" stroke="black" points="305.25,-439 237.25,-439 237.25,-403 305.25,-403 305.25,-439" style=""/>
+<text text-anchor="middle" x="271.25" y="-416.8" font-family="Times,serif" font-size="14.00" style="">图像初始化</text>
+</g>
+<!-- Input&#45;&gt;InitializePic -->
+<g id="edge2" class="edge" data-name="Input-&gt;InitializePic">
+
+<path fill="none" stroke="black" d="M200.25,-422.81C208.58,-422.6 217.26,-422.37 225.56,-422.16" style=""/>
+<polygon fill="black" stroke="black" points="225.55,-425.66 235.46,-421.9 225.37,-418.66 225.55,-425.66" style=""/>
+</g>
+<!-- InitializeBalls -->
+<g id="node4" class="node" pointer-events="visible" data-name="InitializeBalls">
+
+<polygon fill="none" stroke="black" points="400.5,-439 342.5,-439 342.5,-403 400.5,-403 400.5,-439" style=""/>
+<text text-anchor="middle" x="371.5" y="-416.8" font-family="Times,serif" font-size="14.00" style="">球初始化</text>
+</g>
+<!-- InitializePic&#45;&gt;InitializeBalls -->
+<g id="edge3" class="edge" data-name="InitializePic-&gt;InitializeBalls">
+
+<path fill="none" stroke="black" d="M305.51,-421C313.61,-421 322.35,-421 330.72,-421" style=""/>
+<polygon fill="black" stroke="black" points="330.68,-424.5 340.68,-421 330.68,-417.5 330.68,-424.5" style=""/>
+</g>
+<!-- InitPic -->
+<g id="node7" class="node" pointer-events="visible" data-name="InitPic">
+
+<polygon fill="none" stroke="black" points="685.19,-97 617,-97 617,-61 685.19,-61 685.19,-97" style=""/>
+<text text-anchor="middle" x="651.09" y="-74.8" font-family="Times,serif" font-size="14.00" style="">init_pic()</text>
+</g>
+<!-- InitializePic&#45;&gt;InitPic -->
+<g id="edge11" class="edge" data-name="InitializePic-&gt;InitPic">
+
+<path fill="none" stroke="black" d="M292.56,-402.61C355.61,-345.55 548.07,-171.35 621.35,-105.02" style=""/>
+<polygon fill="black" stroke="black" points="623.49,-107.8 628.56,-98.49 618.79,-102.61 623.49,-107.8" style=""/>
+</g>
+<!-- Loop -->
+<g id="node5" class="node" pointer-events="visible" data-name="Loop">
+
+<polygon fill="none" stroke="black" points="516.5,-439 437.5,-439 437.5,-403 516.5,-403 516.5,-439" style=""/>
+<text text-anchor="middle" x="477" y="-416.8" font-family="Times,serif" font-size="14.00" style="">进入循环处理</text>
+</g>
+<!-- InitializeBalls&#45;&gt;Loop -->
+<g id="edge4" class="edge" data-name="InitializeBalls-&gt;Loop">
+
+<path fill="none" stroke="black" d="M400.78,-421C408.61,-421 417.34,-421 426,-421" style=""/>
+<polygon fill="black" stroke="black" points="425.76,-424.5 435.76,-421 425.76,-417.5 425.76,-424.5" style=""/>
+</g>
+<!-- InitBall -->
+<g id="node8" class="node" pointer-events="visible" data-name="InitBall">
+
+<polygon fill="none" stroke="black" points="687.08,-200 615.11,-200 615.11,-164 687.08,-164 687.08,-200" style=""/>
+<text text-anchor="middle" x="651.09" y="-177.8" font-family="Times,serif" font-size="14.00" style="">init_ball()</text>
+</g>
+<!-- InitializeBalls&#45;&gt;InitBall -->
+<g id="edge12" class="edge" data-name="InitializeBalls-&gt;InitBall">
+
+<path fill="none" stroke="black" d="M392.96,-402.72C430.83,-368.99 514.53,-294.84 586.5,-234 596.86,-225.24 608.3,-215.81 618.59,-207.42" style=""/>
+<polygon fill="black" stroke="black" points="620.56,-210.33 626.11,-201.31 616.14,-204.9 620.56,-210.33" style=""/>
+</g>
+<!-- Loop&#45;&gt;Loop -->
+<g id="edge5" class="edge" data-name="Loop-&gt;Loop">
+
+<path fill="none" stroke="black" d="M466.51,-439.15C464.89,-448.54 468.39,-457 477,-457 481.84,-457 485.07,-454.32 486.68,-450.31" style=""/>
+<polygon fill="black" stroke="black" points="490.14,-450.89 487.38,-440.66 483.16,-450.38 490.14,-450.89" style=""/>
+<text text-anchor="middle" x="477" y="-461.2" font-family="Times,serif" font-size="14.00" style="">处理每一张图像</text>
+</g>
+<!-- End -->
+<g id="node6" class="node" pointer-events="visible" data-name="End">
+
+<polygon fill="none" stroke="black" points="680.09,-444.6 622.09,-444.6 622.09,-403.4 680.09,-403.4 680.09,-444.6" style=""/>
+<text text-anchor="middle" x="651.09" y="-428.2" font-family="Times,serif" font-size="14.00" style="">释放内存</text>
+<text text-anchor="middle" x="651.09" y="-411.4" font-family="Times,serif" font-size="14.00" style="">结束</text>
+</g>
+<!-- Loop&#45;&gt;End -->
+<g id="edge6" class="edge" data-name="Loop-&gt;End">
+
+<path fill="none" stroke="black" d="M516.62,-421.67C544.54,-422.16 582.15,-422.82 610.33,-423.31" style=""/>
+<polygon fill="black" stroke="black" points="610.2,-426.81 620.26,-423.48 610.33,-419.81 610.2,-426.81" style=""/>
+<text text-anchor="middle" x="555.5" y="-426.2" font-family="Times,serif" font-size="14.00" style="">退出循环</text>
+</g>
+<!-- Process -->
+<g id="node9" class="node" pointer-events="visible" data-name="Process">
+
+<polygon fill="none" stroke="black" points="684.9,-345 617.28,-345 617.28,-309 684.9,-309 684.9,-345" style=""/>
+<text text-anchor="middle" x="651.09" y="-322.8" font-family="Times,serif" font-size="14.00" style="">process()</text>
+</g>
+<!-- Loop&#45;&gt;Process -->
+<g id="edge13" class="edge" data-name="Loop-&gt;Process">
+
+<path fill="none" stroke="black" d="M511.59,-402.65C538.8,-387.79 577.33,-366.74 606.85,-350.62" style=""/>
+<polygon fill="black" stroke="black" points="608.45,-353.73 615.55,-345.87 605.1,-347.59 608.45,-353.73" style=""/>
+</g>
+<!-- CheckCollision -->
+<g id="node10" class="node" pointer-events="visible" data-name="CheckCollision">
+
+<polygon fill="none" stroke="black" points="707.78,-279 594.41,-279 594.41,-243 707.78,-243 707.78,-279" style=""/>
+<text text-anchor="middle" x="651.09" y="-256.8" font-family="Times,serif" font-size="14.00" style="">check_collision()</text>
+</g>
+<!-- Loop&#45;&gt;CheckCollision -->
+<g id="edge14" class="edge" data-name="Loop-&gt;CheckCollision">
+
+<path fill="none" stroke="black" d="M491.66,-402.68C510.96,-377.58 548.14,-331.98 586.5,-300 592.72,-294.81 599.7,-289.83 606.7,-285.26" style=""/>
+<polygon fill="black" stroke="black" points="608.28,-288.4 614.89,-280.12 604.56,-282.47 608.28,-288.4" style=""/>
+</g>
+<!-- InitPicFlow -->
+<g id="node11" class="node" pointer-events="visible" data-name="InitPicFlow">
+
+<polygon fill="none" stroke="black" points="907.69,-60 786.69,-60 786.69,-24 907.69,-24 907.69,-60" style=""/>
+<text text-anchor="middle" x="847.19" y="-37.8" font-family="Times,serif" font-size="14.00" style="">设置空格、边界和星号</text>
+</g>
+<!-- InitPic&#45;&gt;InitPicFlow -->
+<g id="edge7" class="edge" data-name="InitPic-&gt;InitPicFlow">
+
+<path fill="none" stroke="black" d="M685.46,-72.64C710.07,-67.95 744.48,-61.39 775.14,-55.54" style=""/>
+<polygon fill="black" stroke="black" points="775.59,-59.02 784.76,-53.71 774.28,-52.14 775.59,-59.02" style=""/>
+</g>
+<!-- InitBallFlow -->
+<g id="node12" class="node" pointer-events="visible" data-name="InitBallFlow">
+
+<polygon fill="none" stroke="black" points="918.19,-145 776.19,-145 776.19,-109 918.19,-109 918.19,-145" style=""/>
+<text text-anchor="middle" x="847.19" y="-122.8" font-family="Times,serif" font-size="14.00" style="">设置球的位置、速度和图标</text>
+</g>
+<!-- InitBall&#45;&gt;InitBallFlow -->
+<g id="edge8" class="edge" data-name="InitBall-&gt;InitBallFlow">
+
+<path fill="none" stroke="black" d="M687.24,-172.04C710.39,-165.48 741.61,-156.63 770.25,-148.52" style=""/>
+<polygon fill="black" stroke="black" points="770.96,-151.96 779.62,-145.86 769.05,-145.22 770.96,-151.96" style=""/>
+</g>
+<!-- ProcessFlow -->
+<g id="node13" class="node" pointer-events="visible" data-name="ProcessFlow">
+
+<polygon fill="none" stroke="black" points="949.69,-321 744.69,-321 744.69,-285 949.69,-285 949.69,-321" style=""/>
+<text text-anchor="middle" x="847.19" y="-298.8" font-family="Times,serif" font-size="14.00" style="">打印图像、移动球、边界检测和碰撞检测</text>
+</g>
+<!-- Process&#45;&gt;ProcessFlow -->
+<g id="edge9" class="edge" data-name="Process-&gt;ProcessFlow">
+
+<path fill="none" stroke="black" d="M685.02,-322.93C698.81,-321.22 715.73,-319.13 733.37,-316.95" style=""/>
+<polygon fill="black" stroke="black" points="733.42,-320.47 742.92,-315.77 732.56,-313.52 733.42,-320.47" style=""/>
+</g>
+<!-- CheckCollisionFlow -->
+<g id="node14" class="node" pointer-events="visible" data-name="CheckCollisionFlow">
+
+<polygon fill="none" stroke="black" points="918.19,-235.6 776.19,-235.6 776.19,-194.4 918.19,-194.4 918.19,-235.6" style=""/>
+<text text-anchor="middle" x="847.19" y="-219.2" font-family="Times,serif" font-size="14.00" style="">遍历球，检测距离，</text>
+<text text-anchor="middle" x="847.19" y="-202.4" font-family="Times,serif" font-size="14.00" style="">发生碰撞时改变方向和颜色</text>
+</g>
+<!-- CheckCollision&#45;&gt;CheckCollisionFlow -->
+<g id="edge10" class="edge" data-name="CheckCollision-&gt;CheckCollisionFlow">
+
+<path fill="none" stroke="black" d="M708.23,-247.69C725.92,-243.5 745.83,-238.78 764.9,-234.26" style=""/>
+<polygon fill="black" stroke="black" points="765.62,-237.69 774.54,-231.98 764,-230.88 765.62,-237.69" style=""/>
+</g>
+</g>
+</svg>
