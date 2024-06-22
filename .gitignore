@@ -1,3 +1,14 @@
 ##ignore this file##
 /Materials/
 /report/
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.txt
+*.csv
+*.zip
+*.exe

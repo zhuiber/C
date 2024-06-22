@@ -6,6 +6,7 @@
     "math.h": "c",
     "algorithm": "c",
     "string": "c",
-    "string_view": "c"
+    "string_view": "c",
+    "string.h": "c"
   }
 }
